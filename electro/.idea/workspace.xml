@@ -22,51 +22,38 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b28d44ff-7848-4f7e-a66b-f3711abdac45" name="Default Changelist" comment="java bases">
-      <change afterPath="$PROJECT_DIR$/frontend/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/Logo/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Layout.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/List/SinUpPage.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/MainPage.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/register/ChangePwPage.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/register/FindIdPage.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/register/FindPwPage.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/register/HavePwPage.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/register/LoginPage.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/register/ReLodePage.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/register/RegisterPage.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/register/ShowIdPage.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/plugins/vuetify.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/router/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/actions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/mutation-types.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/mutations.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/states.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/views/Home.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/views/List/SinUp.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/views/MyArea.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/views/register/ChangePw.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/views/register/FindId.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/views/register/FindPw.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/views/register/HavePw.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/views/register/Login.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/views/register/ReLode.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/views/register/Register.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/views/register/ShowId.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/vue.config.js" afterDir="false" />
+    <list default="true" id="b28d44ff-7848-4f7e-a66b-f3711abdac45" name="Default Changelist" comment="vue bases">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/controller/RegisterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/entity/Register.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/reposirory/RegisterReposirory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/service/RegisterService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/service/RegistrerServicelmpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/List/ShowPage.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/List/Show.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/.gradle/6.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/demo/.gradle/6.4.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/.gradle/6.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/demo/.gradle/6.4.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/.gradle/6.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/demo/.gradle/6.4.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/.gradle/6.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/demo/.gradle/6.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/.gradle/6.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/demo/.gradle/6.4.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/.gradle/6.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/demo/.gradle/6.4.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/demo/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/demo/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/demo/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/demo/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/build/classes/java/main/com/example/demo/DemoApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo/build/classes/java/main/com/example/demo/DemoApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/build/resources/main/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/build/resources/main/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/List/SinUpPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/List/SinUpPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/register/RegisterPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/register/RegisterPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/MyArea.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/MyArea.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +77,14 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -108,17 +103,22 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend/src/components" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Git\Bitcamp\Project\soproj1\electro\frontend\src" />
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.demo.entity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Git\Bitcamp\Project\soproj1\electro\frontend\src\components" />
       <recent name="D:\Git\Bitcamp\Project\soproj1\electro\frontend" />
       <recent name="D:\Git\Bitcamp\Project\soproj1\electro\frontend\src\store" />
       <recent name="D:\Git\Bitcamp\Project\soproj1\electro\frontend\src\views" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Git\Bitcamp\Project\soproj1\electro\frontend\src" />
     </key>
   </component>
   <component name="RunManager">
@@ -157,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598690668234</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="vue bases">
+      <created>1598771614134</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1598771614134</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -177,32 +184,65 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="java bases" />
-    <option name="LAST_COMMIT_MESSAGE" value="java bases" />
+    <MESSAGE value="vue bases" />
+    <option name="LAST_COMMIT_MESSAGE" value="vue bases" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1598691716094">
+    <state x="533" y="74" key="#Auto_Import" timestamp="1598841754441">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/-1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1598691716094" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1598698753255">
+    <state x="533" y="74" key="#Auto_Import/-1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1598841754441" />
+    <state x="516" y="213" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598783492510">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/-1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1598698753255" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1598698753255">
+    <state x="516" y="213" key="#com.intellij.fileTypes.FileTypeChooser/-1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1598783492510" />
+    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser" timestamp="1598843496082">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/-1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1598698753255" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1598698753254">
+    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser/-1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1598843496082" />
+    <state x="345" y="325" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1598798114350">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/-1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1598698753254" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1598698753255">
+    <state x="345" y="325" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/-1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1598798114350" />
+    <state x="560" y="292" width="483" height="239" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1598798132986">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/-1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1598698753255" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1598694166158">
+    <state x="560" y="292" width="483" height="239" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/-1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1598798132986" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1598855463441">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/-1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1598694166158" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1598855463441" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1598798217378">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/-1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1598798217378" />
+    <state width="1493" height="572" key="GridCell.Tab.0.bottom" timestamp="1598916070839">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="572" key="GridCell.Tab.0.bottom/-1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1598916070839" />
+    <state width="1493" height="572" key="GridCell.Tab.0.center" timestamp="1598916070839">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="572" key="GridCell.Tab.0.center/-1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1598916070839" />
+    <state width="1493" height="572" key="GridCell.Tab.0.left" timestamp="1598916070839">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="572" key="GridCell.Tab.0.left/-1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1598916070839" />
+    <state width="1493" height="572" key="GridCell.Tab.0.right" timestamp="1598916070839">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="572" key="GridCell.Tab.0.right/-1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1598916070839" />
+    <state x="277" y="57" key="SettingsEditor" timestamp="1598872537086">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="57" key="SettingsEditor/-1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1598872537086" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1598771626006">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/-1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1598771626006" />
+    <state x="468" y="168" key="refactoring.ChangeSignatureDialog" timestamp="1598844398126">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="468" y="168" key="refactoring.ChangeSignatureDialog/-1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1598844398126" />
   </component>
 </project>

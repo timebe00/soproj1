@@ -4,22 +4,14 @@
       <v-row>
         <v-col/>
         <v-col>
-          <v-text-field
-          label="제목"
-          v-model="title"/>
+          <div id="title"/>
         </v-col>
         <v-col/>
       </v-row>
       <v-row>
         <v-col/>
         <v-col>
-          <div id="getpoto" v-if="inputpoto">
-            <v-file-input
-              label="File input"
-              filled
-              v-model="fil"/>
-          </div>
-          <div id="getpoto" v-else>
+          <div id="getpoto">
             <v-row>
               <v-col>
                 <div id="poto2"/>
@@ -28,7 +20,7 @@
                 <div id="poto3">
                   <v-row>
                     <v-col>
-                      {{ k }}중심점
+                      {{ k }} 중심점
                     </v-col>
                   </v-row>
                 </div>
@@ -41,18 +33,14 @@
       <v-row>
         <v-col cols="5%"/>
         <v-col cols="90%">
-          <v-textarea
-            no-resize
-            outlined
-            rows="10"
-            v-model="ex"
-          />
+          <div id="bodytext">
+            {{ getex }}
+          </div>
         </v-col>
         <v-col cols="5%"/>
       </v-row>
       <div align="center">
-        <v-btn @click="signup()">확인</v-btn>
-        <v-btn @click="$router.push('/')"> 취소</v-btn>
+        <v-btn  @click="$router.push('/')">메인으로</v-btn>
       </div>
     </template>
   </Layout>
@@ -71,7 +59,8 @@ export default {
     inputpoto: true,
     title: '',
     ex: '',
-    fil: ''
+    fil: '',
+    getex: ''
   }),
   methods: {
     signup () {
@@ -83,15 +72,13 @@ export default {
 </script>
 
 <style>
-#poto2 {
-  border: solid 2px black;
-  height: 270px;
-  width: 440px;
+#title {
+  margin-top: 40px;
+  height: 30px;
+  border-bottom: solid 1px black;
 }
-#poto3 {
-  border: solid 2px black;
-  height: 270px;
-  width: 150px;
+#bodytext {
+  border: solid 1px black;
 }
 //  div { border: solid 2px black; }
 </style>

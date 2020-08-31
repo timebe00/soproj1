@@ -14,6 +14,7 @@ import HavePw from '../views/register/HavePw.vue'
 //  리스트 관련
 import MyArea from '../views/MyArea.vue'
 import SinUp from '../views/List/SinUp.vue'
+import Show from '../views/List/Show.vue'
 
 Vue.use(VueRouter)
 const routes = [
@@ -72,6 +73,11 @@ const routes = [
     path: '/sinup',
     name: 'SinUp',
     component: SinUp
+  },
+  {
+    path: '/show',
+    name: 'Show',
+    component: Show
   }
 ]
 

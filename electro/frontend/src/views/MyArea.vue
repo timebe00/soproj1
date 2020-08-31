@@ -24,7 +24,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr @click="$router.push('/sinup')">
               <td class="text-center">100</td>
               <td class="text-center">100</td>
               <td class="text-center">100</td>

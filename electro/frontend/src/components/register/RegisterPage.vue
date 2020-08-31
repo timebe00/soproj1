@@ -33,6 +33,8 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   name: 'LoginPage',
   data () {
@@ -50,8 +52,14 @@ export default {
       this.$emit('registerOK', { username, userid, password, birthday })
     },
     clickUse (userid) {
-      console.log('userid: ' + userid)
-      alert('userid : ' + userid)
+      console.log('clickUse : ' + userid)
+      axios.get('http://localhost:1234/overlap', { userid })
+        .then(res => {
+          console.log('res : ' + res)
+        })
+        .catch(err => {
+          alert(err.response.data.message)
+        })
     },
     submit () {}
   }
