@@ -42,7 +42,8 @@ const routes = [
   {
     path: '/login/findpw',
     name: 'FindPw',
-    component: FindPw
+    component: FindPw,
+    props: true
   },
   {
     path: '/login/showid',

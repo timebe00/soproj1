@@ -5,6 +5,7 @@
 <script>
 import FindIdPage from '@/components/register/FindIdPage.vue'
 import router from '../../router'
+import axios from 'axios'
 
 export default {
   name: 'FindId',
@@ -13,8 +14,18 @@ export default {
   },
   methods: {
     onSubmit (payload) {
-      console.log('Login onSubmit() Name : ' + payload.username + ' BR : ' + payload.birthday)
-      router.push('/login/showid')
+      const { name, br } = payload
+      axios.post('http://localhost:1234/findid', { name, br })
+        .then(res => {
+          if (res.status === 204) {
+            alert('잘못 입력하셨습니다.')
+          } else {
+            router.push('/login/showid')
+          }
+        })
+        .catch(err => {
+          alert(err.response.data)
+        })
     }
   }
 }

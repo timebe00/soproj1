@@ -16,27 +16,75 @@ public class RegisterController {
     @Autowired
     private RegisterService service;
 
-    @PostMapping("/")
+    @PostMapping("/register")
     public ResponseEntity<Register> register(@Validated @RequestBody Register register) throws Exception {
         log.info("Controller Register");
-
+        log.info("getUserName : " + register.getName() + "  getUserId : " + register.getId() + "  getUserPassword : " +
+                register.getPw() + "  getUserBirthday : " + register.getBr());
         service.register(register);
 
         return new ResponseEntity<>(register, HttpStatus.OK);
     }
 
-    @GetMapping("/overlap")
-    public ResponseEntity<String> overlap(@Validated @RequestBody String user_id) throws Exception {
+    @PostMapping("/overlap")
+    public ResponseEntity<String> overlap(@Validated @RequestBody Register register) throws Exception {
         log.info("Controller Overlap");
         Boolean TF = false;
-        TF = service.overlap(user_id);
+        TF = service.overlap(register);
 
         if (TF) {
-            return new ResponseEntity<>(user_id, HttpStatus.OK);
+            log.info("ok");
+            return new ResponseEntity<>(HttpStatus.OK);
         } else {
-            return new ResponseEntity<>(user_id, HttpStatus.OK);
+            log.info("No");
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
     }
 
+    @PostMapping("/findid")
+    public ResponseEntity<Register> findid(@Validated @RequestBody Register register) throws Exception {
+        log.info("Controller Find Id");
+        Register getid = new Register();
+        getid = service.findID(register);
 
+        if (getid == null) {
+            log.info("a");
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        } else {
+            log.info("b" + getid);
+            return new ResponseEntity<>(getid, HttpStatus.OK);
+        }
+    }
+
+    @PostMapping("/findpw")
+    public ResponseEntity<Register> findpw(@Validated @RequestBody Register register) throws Exception {
+        log.info("Controller Find Pw");
+        Register getforid;
+        getforid = service.findPw(register);
+
+        if (getforid != null) {
+            return new ResponseEntity<>(getforid,HttpStatus.OK);
+        } else {
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        }
+    }
+
+    @PostMapping("/uplodpw")
+    public void uplodepw(@Validated @RequestBody Register register) throws Exception {
+        log.info("Controller Up lod pw");
+        service.uplodPw(register);
+    }
+
+    @PostMapping("/login")
+    public ResponseEntity<Register> login(@Validated @RequestBody Register register) throws Exception {
+        log.info("Controller Login");
+        Boolean TF = false;
+        TF = service.login(register);
+
+        if (TF) {
+            return new ResponseEntity<>(HttpStatus.OK);
+        } else {
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        }
+    }
 }

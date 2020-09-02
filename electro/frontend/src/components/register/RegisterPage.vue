@@ -5,20 +5,20 @@
       <table>
         <tr>
           <td>이름</td>
-          <td><input type="text" v-model="username"></td>
+          <td><input type="text" v-model="name"></td>
         </tr>
         <tr>
           <td>아이디</td>
-          <td><input type="text" v-model="userid"></td>
-          <td><button @click="clickUse(userid)">중복확인</button></td>
+          <td><input type="text" v-model="id"></td>
+          <td><button @click="clickUse(id)">중복확인</button></td>
         </tr>
         <tr>
           <td>비밀번호</td>
-          <td><input type="password" v-model="password"></td>
+          <td><input type="pw" v-model="pw"></td>
         </tr>
         <tr>
           <td>생일</td>
-          <td><input type="number" v-model="birthday"></td>
+          <td><input type="number" v-model="br"></td>
         </tr>
       </table>
 
@@ -39,23 +39,28 @@ export default {
   name: 'LoginPage',
   data () {
     return {
-      username: '',
-      userid: '',
-      password: '',
-      birthday: 0
+      name: '',
+      id: '',
+      pw: '',
+      br: 0
     }
   },
   methods: {
     registerOK () {
-      console.log('Register Page submit Name : ' + this.username + ' ID : ' + this.userid + ' PW : ' + this.password + ' BR : ' + this.birthday)
-      const { username, userid, password, birthday } = this
-      this.$emit('registerOK', { username, userid, password, birthday })
+      console.log('Register Page submit Name : ' + this.name + ' ID : ' + this.id + ' PW : ' + this.pw + ' BR : ' + this.br)
+      const { name, id, pw, br } = this
+      this.$emit('registerOK', { name, id, pw, br })
     },
-    clickUse (userid) {
-      console.log('clickUse : ' + userid)
-      axios.get('http://localhost:1234/overlap', { userid })
+    clickUse (id) {
+      console.log('clickUse : ' + id)
+      axios.post('http://localhost:1234/overlap', { id })
         .then(res => {
-          console.log('res : ' + res)
+          console.log('res : ' + res.status)
+          if (res.status === 204) {
+            alert('아이디 중복')
+          } else {
+            alert('사용 가능한 아이디')
+          }
         })
         .catch(err => {
           alert(err.response.data.message)

@@ -51,7 +51,7 @@
         <v-col cols="5%"/>
       </v-row>
       <div align="center">
-        <v-btn @click="signup()">확인</v-btn>
+        <v-btn @click="signup()" id="okbtn">확인</v-btn>
         <v-btn @click="$router.push('/')"> 취소</v-btn>
       </div>
     </template>
@@ -92,6 +92,9 @@ export default {
   border: solid 2px black;
   height: 270px;
   width: 150px;
+}
+#okbtn {
+  margin-right: 40px;
 }
 //  div { border: solid 2px black; }
 </style>

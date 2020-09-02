@@ -5,6 +5,7 @@
 <script>
 import LoginPage from '@/components/register/LoginPage.vue'
 import router from '../../router'
+import axios from 'axios'
 
 export default {
   name: 'Login',
@@ -13,8 +14,18 @@ export default {
   },
   methods: {
     onSubmit (payload) {
-      console.log('Login onSubmit() ID : ' + payload.userid + ' PW : ' + payload.password)
-      router.push('/')
+      const { id, pw } = payload
+      axios.post('http://localhost:1234/login', { id, pw })
+        .then(res => {
+          if (res.status === 204) {
+            alert('잘못 입력하셨습니다.')
+          } else {
+            router.push('/')
+          }
+        })
+        .catch(err => {
+          alert(err.response.data)
+        })
     }
   }
 }

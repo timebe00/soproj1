@@ -5,11 +5,11 @@
       <table>
         <tr>
           <td>아이디</td>
-          <td><input type="text" v-model="userid"></td>
+          <td><input type="text" v-model="id"></td>
         </tr>
         <tr>
           <td>비밀번호</td>
-          <td><input type="password" v-model="password"></td>
+          <td><input type="pw" v-model="pw"></td>
         </tr>
       </table>
 
@@ -36,15 +36,15 @@ export default {
   name: 'LoginPage',
   data () {
     return {
-      userid: '',
-      password: ''
+      id: '',
+      pw: ''
     }
   },
   methods: {
     login () {
-      console.log('Login Page submit ID : ' + this.userid + 'PW : ' + this.password)
-      const { userid, password } = this
-      this.$emit('login', { userid, password })
+      console.log('Login Page submit ID : ' + this.id + 'PW : ' + this.pw)
+      const { id, pw } = this
+      this.$emit('login', { id, pw })
     },
     submit () {}
   }

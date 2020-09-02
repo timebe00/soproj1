@@ -5,15 +5,15 @@
       <table>
         <tr>
           <td>이름</td>
-          <td><input type="text" v-model="username"></td>
+          <td><input type="text" v-model="name"></td>
         </tr>
         <tr>
           <td>아이디</td>
-          <td><input type="text" v-model="userid"></td>
+          <td><input type="text" v-model="id"></td>
         </tr>
         <tr>
           <td>생일</td>
-          <td><input type="number" v-model="birthday"></td>
+          <td><input type="number" v-model="br"></td>
         </tr>
       </table>
       <table>
@@ -31,16 +31,16 @@ export default {
   name: 'FindPwPage',
   data () {
     return {
-      userid: '',
-      username: '',
-      birthday: 0
+      id: '',
+      name: '',
+      br: 0
     }
   },
   methods: {
     findpw () {
-      console.log('Find PW Page submit Name : ' + this.username + ' ID : ' + this.userid + ' BR : ' + this.birthday)
-      const { username, userid, birthday } = this
-      this.$emit('findpw', { username, userid, birthday })
+      console.log('Find PW Page submit Name : ' + this.name + ' ID : ' + this.id + ' BR : ' + this.br)
+      const { name, id, br } = this
+      this.$emit('findpw', { name, id, br })
     },
     submit () {}
   }

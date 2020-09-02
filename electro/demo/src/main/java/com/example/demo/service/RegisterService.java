@@ -4,7 +4,9 @@ import com.example.demo.entity.Register;
 
 public interface RegisterService {
     public void register(Register register) throws Exception;
-    public Boolean overlap(String user_id) throws Exception;
+    public Boolean overlap(Register register) throws Exception;
     public Register findID(Register register) throws Exception;
-    public Register uplodPw(Register register) throws Exception;
+    public Register findPw(Register register) throws Exception;
+    public void uplodPw(Register register) throws Exception;
+    public Boolean login(Register register) throws Exception;
 }

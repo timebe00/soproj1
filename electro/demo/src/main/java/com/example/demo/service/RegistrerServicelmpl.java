@@ -15,23 +15,44 @@ public class RegistrerServicelmpl implements RegisterService{
 
     @Override
     public void register(Register register) throws Exception {
+        log.info("Service Register");
         reposirory.create(register);
     }
 
     @Override
-    public Boolean overlap(String user_id) throws Exception {
+    public Boolean overlap(Register register) throws Exception {
+        log.info("Service Overlap");
         Boolean TF = false;
-        TF = reposirory.overlap(user_id);
+        TF = reposirory.overlap(register);
         return TF;
     }
 
     @Override
     public Register findID(Register register) throws Exception {
-        return null;
+        log.info("Service Find ID");
+        return reposirory.findid(register);
     }
 
     @Override
-    public Register uplodPw(Register register) throws Exception {
-        return null;
+    public Register findPw(Register register) throws Exception {
+        log.info("Service Find Pw");
+        Register getforid;
+        getforid = reposirory.findpw(register);
+        return getforid;
+    }
+
+    @Override
+    public void uplodPw(Register register) throws Exception {
+        log.info("Service Up Lod Pw");
+        reposirory.uplodpw(register);
+    }
+
+    @Override
+    public Boolean login(Register register) throws Exception {
+        log.info("Service Login");
+        Boolean TF = false;
+        TF = reposirory.login(register);
+
+        return TF;
     }
 }

@@ -20,28 +20,92 @@ public class RegisterReposirory {
 
     public void create(Register register) throws Exception {
         log.info("Repository Create");
-
-        String query = "insert into board(" +
-                "user_name, user_id, user_password, user_birthday) values(?, ?, ?, ?)";
-        jdbcTemplate.update(query, register.getUserName(), register.getUserId(),
-            register.getUserPassword(), register.getUserBirthday());
+        log.info("getUserName : " + register.getName() + "  getUserId : " + register.getId() + "  getUserPassword : " +
+                register.getPw() + "  getUserBirthday : " + register.getBr());
+        String query = "insert into register(" +
+                "name, id, pw, br) values(?, ?, ?, ?)";
+        jdbcTemplate.update(query, register.getName(), register.getId(),
+            register.getPw(), register.getBr());
     }
 
-    public Boolean overlap(String user_id) throws Exception {
+    public Boolean overlap(Register register) throws Exception {
         log.info("Repository Overlap");
 
         List<Register> res = jdbcTemplate.query(
-                "select user_id from register where user_id = ?",
+                "select id from register where id = ?",
                 new RowMapper<Register>() {
                     @Override
                     public Register mapRow(ResultSet rs, int rowNum) throws SQLException {
-                        Register register = new Register();
+                        Register register1 = new Register();
 
-                        register.setUserId(rs.getString("user_id"));
+                        register1.setId(rs.getString("id"));
 
-                        return register;
+                        return register1;
                     }
-                }, user_id
+                }, register.getId()
+        );
+
+        return res.isEmpty() ? true : false;
+    }
+
+    public Register findid(Register register) throws Exception {
+        log.info("Repository Find Id");
+
+        List<Register> res = jdbcTemplate.query(
+                "select id from register where name = ? and br = ?",
+                new RowMapper<Register>() {
+                    @Override
+                    public Register mapRow(ResultSet rs, int rowNum) throws SQLException {
+                        Register register1 = new Register();
+
+                        register1.setId(rs.getString("id"));
+
+                        return register1;
+                    }
+                },register.getName(), register.getBr()
+        );
+        return res.isEmpty() ? null : res.get(0);
+    }
+
+    public Register findpw(Register register) throws Exception {
+        log.info("Repository Find Pw");
+
+        List<Register> res = jdbcTemplate.query(
+                "select id from register where name = ? and id = ? and br = ?",
+                new RowMapper<Register>() {
+                    @Override
+                    public Register mapRow(ResultSet rs, int rowNum) throws SQLException {
+                        Register register1 = new Register();
+                        register1.setId(rs.getString("id"));
+
+                        return register1;
+                    }
+                },register.getName(), register.getId(), register.getBr()
+        );
+
+        return res.isEmpty() ? null : res.get(0);
+    }
+
+    public void uplodpw(Register register) throws Exception {
+        log.info("Repository Up Lod Pw : ");
+        String query = "update register set pw = ? where id = ?";
+        jdbcTemplate.update(query, register.getPw(), register.getId());
+    }
+
+    public Boolean login(Register register) throws Exception {
+        log.info("Repository Login");
+
+        List<Register> res = jdbcTemplate.query(
+                "select id from register where id = ? and pw = ?",
+                new RowMapper<Register>() {
+                    @Override
+                    public Register mapRow(ResultSet rs, int rowNum) throws SQLException {
+                        Register register1 = new Register();
+                        register1.setId(rs.getString("id"));
+
+                        return register1;
+                    }
+                }, register.getId(), register.getPw()
         );
 
         return res.isEmpty() ? false : true;

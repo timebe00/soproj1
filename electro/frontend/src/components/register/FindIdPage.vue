@@ -5,11 +5,11 @@
       <table>
         <tr>
           <td>이름</td>
-          <td><input type="text" v-model="username"></td>
+          <td><input type="text" v-model="name"></td>
         </tr>
         <tr>
           <td>생년월일</td>
-          <td><input type="number" v-model="birthday"></td>
+          <td><input type="number" v-model="br"></td>
         </tr>
       </table>
 
@@ -28,15 +28,15 @@ export default {
   name: 'FindIdPage',
   data () {
     return {
-      username: '',
-      birthday: 0
+      name: '',
+      br: 0
     }
   },
   methods: {
     findid () {
-      console.log('Find ID Page submit Name : ' + this.username + ' BR : ' + this.birthday)
-      const { username, birthday } = this
-      this.$emit('findid', { username, birthday })
+      console.log('Find ID Page submit Name : ' + this.name + ' BR : ' + this.br)
+      const { name, br } = this
+      this.$emit('findid', { name, br })
     },
     submit () {}
   }
