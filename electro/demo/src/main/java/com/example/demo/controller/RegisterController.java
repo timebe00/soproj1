@@ -44,14 +44,12 @@ public class RegisterController {
     @PostMapping("/findid")
     public ResponseEntity<Register> findid(@Validated @RequestBody Register register) throws Exception {
         log.info("Controller Find Id");
-        Register getid = new Register();
+        Register getid;
         getid = service.findID(register);
 
         if (getid == null) {
-            log.info("a");
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         } else {
-            log.info("b" + getid);
             return new ResponseEntity<>(getid, HttpStatus.OK);
         }
     }
@@ -71,7 +69,7 @@ public class RegisterController {
 
     @PostMapping("/uplodpw")
     public void uplodepw(@Validated @RequestBody Register register) throws Exception {
-        log.info("Controller Up lod pw");
+        log.info("Controller Up Lod PW" );
         service.uplodPw(register);
     }
 

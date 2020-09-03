@@ -29,7 +29,7 @@ export default {
   data () {
     return {
       name: '',
-      br: 0
+      br: ''
     }
   },
   methods: {

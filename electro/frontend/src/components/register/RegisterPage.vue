@@ -14,7 +14,7 @@
         </tr>
         <tr>
           <td>비밀번호</td>
-          <td><input type="pw" v-model="pw"></td>
+          <td><input type="password" v-model="pw"></td>
         </tr>
         <tr>
           <td>생일</td>
@@ -42,7 +42,7 @@ export default {
       name: '',
       id: '',
       pw: '',
-      br: 0
+      br: ''
     }
   },
   methods: {

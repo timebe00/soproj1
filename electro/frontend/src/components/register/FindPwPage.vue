@@ -33,7 +33,7 @@ export default {
     return {
       id: '',
       name: '',
-      br: 0
+      br: ''
     }
   },
   methods: {

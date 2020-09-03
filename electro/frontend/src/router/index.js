@@ -37,7 +37,9 @@ const routes = [
   {
     path: '/login/findid',
     name: 'FindId',
-    component: FindId
+    components: {
+      default: FindId
+    }
   },
   {
     path: '/login/findpw',
@@ -48,7 +50,12 @@ const routes = [
   {
     path: '/login/showid',
     name: 'ShowId',
-    component: ShowId
+    components: {
+      default: ShowId
+    },
+    props: {
+      default: true
+    }
   },
   {
     path: '/myarea',

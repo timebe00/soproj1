@@ -5,7 +5,7 @@
       <table>
         <tr>
           <td>비밀번호</td>
-          <td><input type="password" v-model="password"></td>
+          <td><input type="password" v-model="pw"></td>
         </tr>
       </table>
 
@@ -24,14 +24,15 @@ export default {
   name: 'FindIdPage',
   data () {
     return {
-      password: ''
+      pw: '',
+      id: ''
     }
   },
   methods: {
     okbutton () {
-      console.log('Find ID Page submit Pw : ' + this.password)
-      const { password } = this
-      this.$emit('repassword', { password })
+      console.log('Find ID Page submit Pw : ' + this.pw)
+      const { id, pw } = this
+      this.$emit('repw', { id, pw })
     },
     submit () {}
   }

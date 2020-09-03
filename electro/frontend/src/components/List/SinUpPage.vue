@@ -16,7 +16,6 @@
           <div id="getpoto" v-if="inputpoto">
             <v-file-input
               label="File input"
-              filled
               v-model="fil"/>
           </div>
           <div id="getpoto" v-else>

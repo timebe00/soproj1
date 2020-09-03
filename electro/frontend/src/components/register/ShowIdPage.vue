@@ -5,7 +5,7 @@
       <table>
         <tr>
           <td>ID</td>
-          <td>{{ showid }}</td>
+          <td>{{ id }}</td>
         </tr>
       </table>
 
@@ -21,11 +21,11 @@
 <script>
 export default {
   name: 'FindIdPage',
-  data: () => ({
-    showid: ''
-  }),
   methods: {
     submit () {}
+  },
+  props: {
+    id: String
   }
 }
 </script>

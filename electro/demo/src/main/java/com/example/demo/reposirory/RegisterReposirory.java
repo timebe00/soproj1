@@ -87,7 +87,7 @@ public class RegisterReposirory {
     }
 
     public void uplodpw(Register register) throws Exception {
-        log.info("Repository Up Lod Pw : ");
+        log.info("Repository Up Lod Pw");
         String query = "update register set pw = ? where id = ?";
         jdbcTemplate.update(query, register.getPw(), register.getId());
     }

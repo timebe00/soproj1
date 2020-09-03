@@ -29,14 +29,21 @@
 </template>
 
 <script>
+//  import axios from 'axios'
+import { mapActions } from 'vuex'
+
 export default {
   methods: {
+    ...mapActions([
+      'rememberid'
+    ]),
     logout () {
       this.TF = false
     }
   },
   data: () => ({
-    TF: true
+    id: '',
+    TF: false
   })
 }
 </script>

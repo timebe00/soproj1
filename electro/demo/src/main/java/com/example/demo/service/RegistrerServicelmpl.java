@@ -30,7 +30,9 @@ public class RegistrerServicelmpl implements RegisterService{
     @Override
     public Register findID(Register register) throws Exception {
         log.info("Service Find ID");
-        return reposirory.findid(register);
+        Register getforid;
+        getforid = reposirory.findid(register);
+        return getforid;
     }
 
     @Override

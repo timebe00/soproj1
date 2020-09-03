@@ -9,7 +9,7 @@
         </tr>
         <tr>
           <td>비밀번호</td>
-          <td><input type="password" v-model="password"></td>
+          <td><input type="password" v-model="pw"></td>
         </tr>
       </table>
 
@@ -29,14 +29,14 @@ export default {
   data () {
     return {
       userid: '',
-      password: ''
+      pw: ''
     }
   },
   methods: {
     login () {
-      console.log('Re Lode Page submit ID : ' + this.userid + 'PW : ' + this.password)
-      const { userid, password } = this
-      this.$emit('login', { userid, password })
+      console.log('Re Lode Page submit ID : ' + this.userid + 'PW : ' + this.pw)
+      const { userid, pw } = this
+      this.$emit('login', { userid, pw })
     },
     submit () {}
   }

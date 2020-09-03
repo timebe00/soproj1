@@ -6,13 +6,20 @@
 import LoginPage from '@/components/register/LoginPage.vue'
 import router from '../../router'
 import axios from 'axios'
+import { mapActions } from 'vuex'
 
 export default {
   name: 'Login',
   components: {
     LoginPage
   },
+  data: () => ({
+    a: 'asd'
+  }),
   methods: {
+    ...mapActions([
+      'rememberid'
+    ]),
     onSubmit (payload) {
       const { id, pw } = payload
       axios.post('http://localhost:1234/login', { id, pw })
@@ -20,6 +27,7 @@ export default {
           if (res.status === 204) {
             alert('잘못 입력하셨습니다.')
           } else {
+            this.rememberid(this.a)
             router.push('/')
           }
         })

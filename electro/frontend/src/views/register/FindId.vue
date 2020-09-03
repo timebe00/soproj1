@@ -12,6 +12,9 @@ export default {
   components: {
     FindIdPage
   },
+  data: () => ({
+    id: ''
+  }),
   methods: {
     onSubmit (payload) {
       const { name, br } = payload
@@ -20,7 +23,8 @@ export default {
           if (res.status === 204) {
             alert('잘못 입력하셨습니다.')
           } else {
-            router.push('/login/showid')
+            this.id = res.data.id
+            router.push({ name: 'ShowId', params: { id: this.id } })
           }
         })
         .catch(err => {

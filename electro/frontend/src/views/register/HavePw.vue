@@ -1,28 +1,33 @@
 <template>
-  <change-pw-page @repassword="onSubmit"/>
+  <have-pw-page @repw="onSubmit"/>
 </template>
 
 <script>
-import ChangePwPage from '@/components/register/ChangePwPage.vue'
+import HavePwPage from '@/components/register/HavePwPage.vue'
 import router from '../../router'
 import axios from 'axios'
 
 export default {
-  name: 'ChangePw',
+  name: 'HavePw',
   components: {
-    ChangePwPage
+    HavePwPage
   },
+  data: () => ({
+    id: ''
+  }),
   methods: {
     onSubmit (payload) {
-      const { pw } = payload
-      axios.post('http://localhost:1234/uplodpw', { pw })
+      this.id = this.$route.params.id
+      payload.id = this.id
+      const { id, pw } = payload
+      axios.post('http://localhost:1234/uplodpw', { id, pw })
         .then(res => {
           alert('비밀번호 변경 성공')
+          router.push('/login')
         })
         .catch(err => {
           alert(err.response.data)
         })
-      router.push('/login')
     }
   }
 }

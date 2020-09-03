@@ -1,5 +1,5 @@
 <template>
-  <show-id-page @idshow="onSubmit"/>
+  <show-id-page @idshow="onSubmit" v-bind:id="id"/>
 </template>
 
 <script>
@@ -13,9 +13,14 @@ export default {
   },
   methods: {
     onSubmit (payload) {
-      console.log('ShowId')
       router.push('/login')
     }
+  },
+  props: {
+    id: String
+  },
+  mounted () {
+    console.log('id : ' + this.id)
   }
 }
 </script>

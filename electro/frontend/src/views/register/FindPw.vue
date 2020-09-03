@@ -12,6 +12,9 @@ export default {
   components: {
     FindPwPage
   },
+  data: () => ({
+    id: ''
+  }),
   methods: {
     onSubmit (payload) {
       const { name, id, br } = payload
@@ -20,8 +23,8 @@ export default {
           if (res.status === 204) {
             alert('잘못 입력하셨습니다.  :  ')
           } else {
-            alert('res.data.id : ' + res.data.id)
-            router.push('/login/havepw', res.data.id)
+            this.id = res.data.id
+            router.push({ name: 'HavePw', params: { id } })
           }
         })
         .catch(err => {

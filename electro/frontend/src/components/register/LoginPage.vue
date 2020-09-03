@@ -9,7 +9,7 @@
         </tr>
         <tr>
           <td>비밀번호</td>
-          <td><input type="pw" v-model="pw"></td>
+          <td><input type="password" v-model="pw"></td>
         </tr>
       </table>
 
@@ -19,7 +19,6 @@
           <td><button @click="$router.push('/')">취소</button></td>
         </tr>
       </table>
-
       <table>
         <tr>
           <td><a @click="$router.push('/register')">회원가입</a></td>
