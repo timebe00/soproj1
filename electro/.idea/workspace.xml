@@ -22,41 +22,29 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b28d44ff-7848-4f7e-a66b-f3711abdac45" name="Default Changelist" comment="20200901">
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/getter.js" afterDir="false" />
+    <list default="true" id="b28d44ff-7848-4f7e-a66b-f3711abdac45" name="Default Changelist" comment="20200902">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/.gradle/6.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/demo/.gradle/6.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/.gradle/6.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/demo/.gradle/6.4.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/.gradle/6.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/demo/.gradle/6.4.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/.gradle/6.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/demo/.gradle/6.4.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/.gradle/6.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/demo/.gradle/6.4.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/.gradle/6.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/demo/.gradle/6.4.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/demo/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/demo/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/build/resources/main/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/build/resources/main/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/controller/RegisterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/entity/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/entity/Register.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/reposirory/RegisterReposirory.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/reposirory/RegisterReposirory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/service/RegisterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/service/RegisterService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/service/RegistrerServicelmpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/service/RegistrerServicelmpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/Layout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Layout.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/List/SinUpPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/List/SinUpPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/register/FindIdPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/register/FindIdPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/register/FindPwPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/register/FindPwPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/register/HavePwPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/register/HavePwPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/register/LoginPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/register/LoginPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/register/ReLodePage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/register/ReLodePage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/register/RegisterPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/register/RegisterPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/register/ShowIdPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/register/ShowIdPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/MainPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/MainPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/getter.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/getter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store/mutation-types.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/mutation-types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store/mutations.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/mutations.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/store/states.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/states.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/register/FindId.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/register/FindId.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/register/FindPw.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/register/FindPw.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/register/HavePw.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/register/HavePw.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/views/register/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/register/Login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/register/ShowId.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/register/ShowId.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,13 +95,10 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../SpringExamples" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Git\Bitcamp\Project\soproj1\electro\frontend\src" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.example.demo.entity" />
     </key>
@@ -122,6 +107,9 @@
       <recent name="D:\Git\Bitcamp\Project\soproj1\electro\frontend" />
       <recent name="D:\Git\Bitcamp\Project\soproj1\electro\frontend\src\store" />
       <recent name="D:\Git\Bitcamp\Project\soproj1\electro\frontend\src\views" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Git\Bitcamp\Project\soproj1\electro\frontend\src" />
     </key>
   </component>
   <component name="RunManager">
@@ -181,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599005380473</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="20200902">
+      <created>1599091256998</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1599091256998</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -204,13 +199,18 @@
     <MESSAGE value="vue bases" />
     <MESSAGE value="20200831" />
     <MESSAGE value="20200901" />
-    <option name="LAST_COMMIT_MESSAGE" value="20200901" />
+    <MESSAGE value="20200902" />
+    <option name="LAST_COMMIT_MESSAGE" value="20200902" />
   </component>
   <component name="WindowStateProjectService">
     <state x="533" y="74" key="#Auto_Import" timestamp="1598841754441">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="533" y="74" key="#Auto_Import/-1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1598841754441" />
+    <state x="513" y="235" key="#Notifications" timestamp="1599091318668">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="513" y="235" key="#Notifications/-1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1599091318668" />
     <state x="516" y="213" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598783492510">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -231,30 +231,31 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1598855463441" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1599022941606">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1599205981092">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/-1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1599022941606" />
-    <state width="1493" height="71" key="GridCell.Tab.0.bottom" timestamp="1599042856655">
+    <state x="-1234" y="209" key="FileChooserDialogImpl/-1920.0.1920.1030/0.0.1536.824@-1920.0.1920.1030" timestamp="1599113791499" />
+    <state x="549" y="167" key="FileChooserDialogImpl/-1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1599205981092" />
+    <state width="1877" height="327" key="GridCell.Tab.0.bottom" timestamp="1599214496518">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="306" key="GridCell.Tab.0.bottom/-1920.0.1920.1030/0.0.1536.824@-1920.0.1920.1030" timestamp="1599035580546" />
-    <state width="1493" height="71" key="GridCell.Tab.0.bottom/-1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1599042856655" />
-    <state width="1493" height="71" key="GridCell.Tab.0.center" timestamp="1599042856655">
+    <state width="1877" height="327" key="GridCell.Tab.0.bottom/-1920.0.1920.1030/0.0.1536.824@-1920.0.1920.1030" timestamp="1599207937417" />
+    <state width="1877" height="327" key="GridCell.Tab.0.bottom/-1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1599214496518" />
+    <state width="1877" height="327" key="GridCell.Tab.0.center" timestamp="1599214496518">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="306" key="GridCell.Tab.0.center/-1920.0.1920.1030/0.0.1536.824@-1920.0.1920.1030" timestamp="1599035580546" />
-    <state width="1493" height="71" key="GridCell.Tab.0.center/-1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1599042856655" />
-    <state width="1493" height="71" key="GridCell.Tab.0.left" timestamp="1599042856655">
+    <state width="1877" height="327" key="GridCell.Tab.0.center/-1920.0.1920.1030/0.0.1536.824@-1920.0.1920.1030" timestamp="1599207937416" />
+    <state width="1877" height="327" key="GridCell.Tab.0.center/-1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1599214496518" />
+    <state width="1877" height="327" key="GridCell.Tab.0.left" timestamp="1599214496517">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="306" key="GridCell.Tab.0.left/-1920.0.1920.1030/0.0.1536.824@-1920.0.1920.1030" timestamp="1599035580546" />
-    <state width="1493" height="71" key="GridCell.Tab.0.left/-1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1599042856655" />
-    <state width="1493" height="71" key="GridCell.Tab.0.right" timestamp="1599042856655">
+    <state width="1877" height="327" key="GridCell.Tab.0.left/-1920.0.1920.1030/0.0.1536.824@-1920.0.1920.1030" timestamp="1599207937416" />
+    <state width="1877" height="327" key="GridCell.Tab.0.left/-1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1599214496517" />
+    <state width="1877" height="327" key="GridCell.Tab.0.right" timestamp="1599214496518">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="306" key="GridCell.Tab.0.right/-1920.0.1920.1030/0.0.1536.824@-1920.0.1920.1030" timestamp="1599035580546" />
-    <state width="1493" height="71" key="GridCell.Tab.0.right/-1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1599042856655" />
+    <state width="1877" height="327" key="GridCell.Tab.0.right/-1920.0.1920.1030/0.0.1536.824@-1920.0.1920.1030" timestamp="1599207937416" />
+    <state width="1877" height="327" key="GridCell.Tab.0.right/-1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1599214496518" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1598952391614">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -275,10 +276,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/-1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1598872537086" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1599005391341">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1599091337236">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/-1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1599005391341" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/-1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1599091337236" />
+    <state x="476" y="10" width="584" height="804" key="find.popup" timestamp="1599101426515">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="476" y="10" width="584" height="804" key="find.popup/-1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1599101426515" />
     <state x="468" y="168" key="refactoring.ChangeSignatureDialog" timestamp="1598844398126">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

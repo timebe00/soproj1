@@ -30,21 +30,34 @@
 
 <script>
 //  import axios from 'axios'
-import { mapActions } from 'vuex'
+import { mapActions, mapGetters } from 'vuex'
+import router from '../router'
 
 export default {
-  methods: {
-    ...mapActions([
-      'rememberid'
-    ]),
-    logout () {
-      this.TF = false
-    }
+  computed: {
+    ...mapGetters(['getid'])
   },
   data: () => ({
     id: '',
-    TF: false
-  })
+    TF: false,
+    havelogout: 'null'
+  }),
+  methods: {
+    ...mapActions(['rememberid']),
+    logout () {
+      this.rememberid(this.havelogout)
+      this.TF = false
+      router.push('/')
+    }
+  },
+  mounted (payload) {
+    console.log('getid : ' + this.getid)
+    if (this.getid === 'null') {
+      this.TF = false
+    } else {
+      this.TF = true
+    }
+  }
 }
 </script>
 

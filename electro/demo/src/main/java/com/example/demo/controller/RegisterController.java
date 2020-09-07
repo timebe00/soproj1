@@ -76,11 +76,11 @@ public class RegisterController {
     @PostMapping("/login")
     public ResponseEntity<Register> login(@Validated @RequestBody Register register) throws Exception {
         log.info("Controller Login");
-        Boolean TF = false;
-        TF = service.login(register);
+        Register getid;
+        getid = service.login(register);
 
-        if (TF) {
-            return new ResponseEntity<>(HttpStatus.OK);
+        if (getid != null) {
+            return new ResponseEntity<>(getid, HttpStatus.OK);
         } else {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }

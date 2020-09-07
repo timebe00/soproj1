@@ -14,14 +14,17 @@
         <v-col/>
         <v-col>
           <div id="getpoto" v-if="inputpoto">
-            <v-file-input
-              label="File input"
-              v-model="fil"/>
+            <form action="http://localhost:5000/img" method="GET" enctype="multipart/form-data">
+                <input type="file" name="file"/>
+                <v-btn type="submit" @click="asd()">확인</v-btn>
+            </form>
           </div>
           <div id="getpoto" v-else>
             <v-row>
               <v-col>
-                <div id="poto2"/>
+                <div id="poto2">
+                  <v-img src="../../Logo/asdf.png" contain id="grape"/>
+                </div>
               </v-col>
               <v-col>
                 <div id="poto3">
@@ -76,6 +79,10 @@ export default {
     signup () {
       console.log('ex : ' + this.ex + ' fil : ' + this.fil + ' title : ' + this.title)
       router.push('/')
+    },
+    submit () {},
+    asd () {
+      console.log('asd')
     }
   }
 }
@@ -84,12 +91,12 @@ export default {
 <style>
 #poto2 {
   border: solid 2px black;
-  height: 270px;
+  height: 300px;
   width: 440px;
 }
 #poto3 {
   border: solid 2px black;
-  height: 270px;
+  height: 300px;
   width: 150px;
 }
 #okbtn {

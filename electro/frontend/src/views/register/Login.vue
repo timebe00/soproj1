@@ -17,9 +17,7 @@ export default {
     a: 'asd'
   }),
   methods: {
-    ...mapActions([
-      'rememberid'
-    ]),
+    ...mapActions(['rememberid']),
     onSubmit (payload) {
       const { id, pw } = payload
       axios.post('http://localhost:1234/login', { id, pw })
@@ -27,7 +25,7 @@ export default {
           if (res.status === 204) {
             alert('잘못 입력하셨습니다.')
           } else {
-            this.rememberid(this.a)
+            this.rememberid(res.data.id)
             router.push('/')
           }
         })

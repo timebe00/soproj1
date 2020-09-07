@@ -9,7 +9,7 @@
         @click:append="sendMessage"/>
       </v-col>
       <v-col align="right">
-          <v-btn height="30px" style="margin-top:20px;" @click="$router.push('/sinup')">등록</v-btn>
+          <v-btn height="30px" style="margin-top:20px;" @click="$router.push('/sinup')" v-if="TF">등록</v-btn>
       </v-col>
     </v-row>
     <slot name="content" class="font" id="tables"/>

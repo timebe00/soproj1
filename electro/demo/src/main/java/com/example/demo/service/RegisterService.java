@@ -8,5 +8,5 @@ public interface RegisterService {
     public Register findID(Register register) throws Exception;
     public Register findPw(Register register) throws Exception;
     public void uplodPw(Register register) throws Exception;
-    public Boolean login(Register register) throws Exception;
+    public Register login(Register register) throws Exception;
 }

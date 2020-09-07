@@ -92,7 +92,7 @@ public class RegisterReposirory {
         jdbcTemplate.update(query, register.getPw(), register.getId());
     }
 
-    public Boolean login(Register register) throws Exception {
+    public Register login(Register register) throws Exception {
         log.info("Repository Login");
 
         List<Register> res = jdbcTemplate.query(
@@ -108,6 +108,6 @@ public class RegisterReposirory {
                 }, register.getId(), register.getPw()
         );
 
-        return res.isEmpty() ? false : true;
+        return res.isEmpty() ? null : res.get(0);
     }
 }
