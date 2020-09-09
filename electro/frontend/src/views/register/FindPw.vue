@@ -18,7 +18,7 @@ export default {
   methods: {
     onSubmit (payload) {
       const { name, id, br } = payload
-      axios.post('http://localhost:1234/findpw', { name, id, br })
+      axios.post('http://localhost:1234/register/findpw', { name, id, br })
         .then(res => {
           if (res.status === 204) {
             alert('잘못 입력하셨습니다.  :  ')

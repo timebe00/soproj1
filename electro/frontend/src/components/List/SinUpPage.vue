@@ -14,16 +14,19 @@
         <v-col/>
         <v-col>
           <div id="getpoto" v-if="inputpoto">
-            <form action="http://localhost:5000/img" method="GET" enctype="multipart/form-data">
-                <input type="file" name="file"/>
-                <v-btn type="submit" @click="asd()">확인</v-btn>
-            </form>
+            <v-file-input
+              accept="image/*"
+              label="File input"
+              outlined
+              dense
+            />
+            <v-btn @click="asd()">확인</v-btn>
           </div>
           <div id="getpoto" v-else>
             <v-row>
               <v-col>
                 <div id="poto2">
-                  <v-img src="../../Logo/asdf.png" contain id="grape"/>
+                  <v-img src="../../Logo/logo.png" contain id="grape"/>
                 </div>
               </v-col>
               <v-col>
@@ -62,7 +65,8 @@
 
 <script>
 import Layout from '@/components/Layout.vue'
-import router from '../../router'
+//  import router from '../../router'
+//  import axios from 'axios'
 
 export default {
   components: {
@@ -70,19 +74,20 @@ export default {
   },
   data: () => ({
     k: 1,
-    inputpoto: true,
+    inputpoto: false,
     title: '',
     ex: '',
-    fil: ''
+    file: 'asd'
   }),
   methods: {
     signup () {
-      console.log('ex : ' + this.ex + ' fil : ' + this.fil + ' title : ' + this.title)
-      router.push('/')
+      console.log('ex : ' + this.ex + ' fil : ' + this.file + ' title : ' + this.title)
+      const { title, file, ex } = this
+      this.$emit('listup', { title, file, ex })
     },
     submit () {},
     asd () {
-      console.log('asd')
+      console.log('fil : ' + this.fil)
     }
   }
 }

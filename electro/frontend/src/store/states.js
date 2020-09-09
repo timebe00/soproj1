@@ -1,3 +1,4 @@
 export default {
-  saveid: 'null'
+  saveid: 'null',
+  mainboard: []
 }

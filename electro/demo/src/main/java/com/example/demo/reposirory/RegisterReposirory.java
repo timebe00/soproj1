@@ -19,7 +19,7 @@ public class RegisterReposirory {
     private JdbcTemplate jdbcTemplate;
 
     public void create(Register register) throws Exception {
-        log.info("Repository Create");
+        log.info("Repository Register Create");
         log.info("getUserName : " + register.getName() + "  getUserId : " + register.getId() + "  getUserPassword : " +
                 register.getPw() + "  getUserBirthday : " + register.getBr());
         String query = "insert into register(" +
@@ -29,7 +29,7 @@ public class RegisterReposirory {
     }
 
     public Boolean overlap(Register register) throws Exception {
-        log.info("Repository Overlap");
+        log.info("Repository Register Overlap");
 
         List<Register> res = jdbcTemplate.query(
                 "select id from register where id = ?",
@@ -49,7 +49,7 @@ public class RegisterReposirory {
     }
 
     public Register findid(Register register) throws Exception {
-        log.info("Repository Find Id");
+        log.info("Repository Register Find Id");
 
         List<Register> res = jdbcTemplate.query(
                 "select id from register where name = ? and br = ?",
@@ -68,7 +68,7 @@ public class RegisterReposirory {
     }
 
     public Register findpw(Register register) throws Exception {
-        log.info("Repository Find Pw");
+        log.info("Repository Register Find Pw");
 
         List<Register> res = jdbcTemplate.query(
                 "select id from register where name = ? and id = ? and br = ?",
@@ -87,13 +87,13 @@ public class RegisterReposirory {
     }
 
     public void uplodpw(Register register) throws Exception {
-        log.info("Repository Up Lod Pw");
+        log.info("Repository Register Up Lod Pw");
         String query = "update register set pw = ? where id = ?";
         jdbcTemplate.update(query, register.getPw(), register.getId());
     }
 
     public Register login(Register register) throws Exception {
-        log.info("Repository Login");
+        log.info("Repository Register Login");
 
         List<Register> res = jdbcTemplate.query(
                 "select id from register where id = ? and pw = ?",

@@ -1,6 +1,7 @@
 import {
   Login,
-  FINDONE
+  FINDONE,
+  MAINBOARD
 } from './mutation-types'
 
 //  import axios from 'axios'
@@ -14,5 +15,8 @@ export default {
   [FINDONE] (state, payload) {
     console.log('FINDONE : ' + payload)
     state.saveid = payload
+  },
+  [MAINBOARD] (state, mainboard) {
+    state.mainboard = mainboard
   }
 }

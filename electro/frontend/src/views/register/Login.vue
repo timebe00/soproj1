@@ -20,7 +20,7 @@ export default {
     ...mapActions(['rememberid']),
     onSubmit (payload) {
       const { id, pw } = payload
-      axios.post('http://localhost:1234/login', { id, pw })
+      axios.post('http://localhost:1234/register/login', { id, pw })
         .then(res => {
           if (res.status === 204) {
             alert('잘못 입력하셨습니다.')

@@ -18,7 +18,7 @@ export default {
   methods: {
     onSubmit (payload) {
       const { name, br } = payload
-      axios.post('http://localhost:1234/findid', { name, br })
+      axios.post('http://localhost:1234/register/findid', { name, br })
         .then(res => {
           if (res.status === 204) {
             alert('잘못 입력하셨습니다.')

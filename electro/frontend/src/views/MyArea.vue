@@ -19,13 +19,11 @@
           <thead padding="1px" margin="1px">
             <tr>
               <th class="text-center" width="10%">No.</th>
-              <th class="text-center" width="70%">제목</th>
-              <th class="text-center" width="20%">날짜</th>
+              <th class="text-center" width="90%">제목</th>
             </tr>
           </thead>
           <tbody>
             <tr @click="$router.push('/show')">
-              <td class="text-center">100</td>
               <td class="text-center">100</td>
               <td class="text-center">100</td>
             </tr>

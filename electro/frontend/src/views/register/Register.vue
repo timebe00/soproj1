@@ -16,7 +16,7 @@ export default {
     onSubmit (payload) {
       console.log('Register submit Name : ' + payload.name + ' ID : ' + payload.id + ' PW : ' + payload.pw + ' BR : ' + payload.br)
       const { name, id, pw, br } = payload
-      axios.post('http://localhost:1234/register', { name, id, pw, br })
+      axios.post('http://localhost:1234/register/register', { name, id, pw, br })
         .then(res => {
           alert('회원가입 성공')
           router.push('/')

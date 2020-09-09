@@ -53,7 +53,7 @@ export default {
     },
     clickUse (id) {
       console.log('clickUse : ' + id)
-      axios.post('http://localhost:1234/overlap', { id })
+      axios.post('http://localhost:1234/register/overlap', { id })
         .then(res => {
           console.log('res : ' + res.status)
           if (res.status === 204) {

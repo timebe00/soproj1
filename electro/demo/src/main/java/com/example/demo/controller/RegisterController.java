@@ -11,12 +11,13 @@ import org.springframework.web.bind.annotation.*;
 
 @Log
 @RestController
+@RequestMapping("/register")
 @CrossOrigin(origins = "http://localhost:8080", allowedHeaders = "*")
 public class RegisterController {
     @Autowired
     private RegisterService service;
 
-    @PostMapping("/register")
+    @PostMapping("")
     public ResponseEntity<Register> register(@Validated @RequestBody Register register) throws Exception {
         log.info("Controller Register");
         log.info("getUserName : " + register.getName() + "  getUserId : " + register.getId() + "  getUserPassword : " +
@@ -67,7 +68,7 @@ public class RegisterController {
         }
     }
 
-    @PostMapping("/uplodpw")
+    @PostMapping("uplodpw")
     public void uplodepw(@Validated @RequestBody Register register) throws Exception {
         log.info("Controller Up Lod PW" );
         service.uplodPw(register);
