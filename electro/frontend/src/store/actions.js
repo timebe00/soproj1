@@ -1,6 +1,7 @@
 import {
   FINDONE,
-  MAINBOARD
+  MAINBOARD,
+  MYBOARD
 } from './mutation-types'
 
 import axios from 'axios'
@@ -12,11 +13,17 @@ export default {
     commit(FINDONE, a)
   },
   mainBoarder ({ commit }) {
-    console.log('qwe')
     return axios.get('http://localhost:1234/member/mainmember')
       .then(res => {
         console.log('res.data : ' + res.data)
         commit(MAINBOARD, res.data)
+      })
+  },
+  async myBoarder ({ commit }, id) {
+    console.log('action id : ' + id)
+    return axios.post('http://localhost:1234/member/mymember', { id })
+      .then(res => {
+        commit(MYBOARD, res.data)
       })
   }
 }

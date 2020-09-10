@@ -24,7 +24,7 @@ export default {
       payload.id = this.id
       const { title, file, ex, id } = payload
       console.log('payload.id : ' + payload.id)
-      axios.get('http://localhost:1234/member/sinup', { title, file, ex, id })
+      axios.post('http://localhost:1234/member/sinup', { title, file, ex, id })
         .then(res => {
           alert('확인')
           router.push('/')

@@ -4,7 +4,7 @@
       <v-row>
         <v-col/>
         <v-col>
-          <div id="title"/>
+          <div id="title">{{ title }}</div>
         </v-col>
         <v-col/>
       </v-row>
@@ -14,7 +14,7 @@
           <div id="getpoto">
             <v-row>
               <v-col>
-                <div id="poto2"/>
+                <div id="poto2">{{ file }}</div>
               </v-col>
               <v-col>
                 <div id="poto3">
@@ -34,7 +34,7 @@
         <v-col cols="5%"/>
         <v-col cols="90%">
           <div id="bodytext">
-            {{ getex }}
+            {{ ex }}
           </div>
         </v-col>
         <v-col cols="5%"/>
@@ -56,12 +56,13 @@ export default {
   },
   data: () => ({
     k: 1,
-    inputpoto: true,
-    title: '',
-    ex: '',
-    fil: '',
-    getex: ''
+    inputpoto: true
   }),
+  props: {
+    title: String,
+    file: String,
+    ex: String
+  },
   methods: {
     signup () {
       console.log('ex : ' + this.ex + ' fil : ' + this.fil + ' title : ' + this.title)

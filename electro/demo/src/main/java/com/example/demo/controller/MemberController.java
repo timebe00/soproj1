@@ -34,8 +34,16 @@ public class MemberController {
     }
 
     @PostMapping("/mymember")
-    public ResponseEntity<List<Member>> mymember(Member member) throws Exception {
+    public ResponseEntity<List<Member>> mymember(@Validated @RequestBody Member member) throws Exception {
         log.info("Controller My Member");
+        log.info("Member : " + member.getId());
         return new ResponseEntity<>(service.mymember(member), HttpStatus.OK);
+    }
+
+    @PostMapping("/readmember")
+    public ResponseEntity<Member> read (@Validated @RequestBody Member member) throws Exception {
+        log.info("Member Read" + member.getMemberNo());
+        Member member1 = service.read(member);
+        return new ResponseEntity<Member>(member1, HttpStatus.OK);
     }
 }

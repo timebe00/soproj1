@@ -32,4 +32,9 @@ public class MemberServicelmpl implements MemberService {
         log.info("Service My Member");
         return reposirory.mymember(member);
     }
+
+    @Override
+    public Member read(Member member) throws Exception {
+        return reposirory.read(member);
+    }
 }

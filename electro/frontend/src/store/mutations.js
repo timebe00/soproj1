@@ -1,7 +1,8 @@
 import {
   Login,
   FINDONE,
-  MAINBOARD
+  MAINBOARD,
+  MYBOARD
 } from './mutation-types'
 
 //  import axios from 'axios'
@@ -18,5 +19,8 @@ export default {
   },
   [MAINBOARD] (state, mainboard) {
     state.mainboard = mainboard
+  },
+  [MYBOARD] (state, myboard) {
+    state.myboard = myboard
   }
 }

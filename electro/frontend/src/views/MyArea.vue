@@ -1,65 +1,30 @@
 <template>
-  <main-page>
-    <template #iconinput>
-      <v-app-bar-nav-icon clipped-right @click.stop="drawer = !drawer"/>
-      <v-navigation-drawer v-model="drawer">
-        <v-list-item @click.stop="left = !left">
-          <v-list-item-action>
-            <v-icon>mdi-key-variant</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title @click="home">비밀번호 변경</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-      </v-navigation-drawer>
-    </template>
-    <template #content>
-      <v-simple-table id="tables">
-        <template v-slot:default padding="1px">
-          <thead padding="1px" margin="1px">
-            <tr>
-              <th class="text-center" width="10%">No.</th>
-              <th class="text-center" width="90%">제목</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr @click="$router.push('/show')">
-              <td class="text-center">100</td>
-              <td class="text-center">100</td>
-            </tr>
-          </tbody>
-        </template>
-      </v-simple-table>
-    </template>
-  </main-page>
+  <my-area-list :myboard="myboard"/>
 </template>
 
 <script>
-import MainPage from '@/components/MainPage.vue'
-import router from '../router'
+import MyAreaList from '@/components/MyAreaList.vue'
+import { mapState, mapActions } from 'vuex'
 
 export default {
   name: 'Home',
   components: {
-    MainPage
-  },
-  methods: {
-    home () {
-      (window.location.pathname !== '/myarea/relode') ? router.push('/myarea/relode') : router.go(0)
-    }
+    MyAreaList
   },
   data: () => ({
-    drawer: false,
-    left: false
-  })
+    id: ''
+  }),
+  computed: {
+    ...mapState(['myboard']),
+    ...mapState(['saveid'])
+  },
+  methods: {
+    ...mapActions(['myBoarder'])
+  },
+  mounted () {
+    this.id = this.saveid
+    console.log(this.id)
+    this.myBoarder(this.id)
+  }
 }
 </script>
-
-<style>
-#tables {
-  padding-top:0px;
-  margin-left:60px;
-  margin-right:60px;
-  margin-top:-30px
-}
-</style>

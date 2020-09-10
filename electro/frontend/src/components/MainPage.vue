@@ -3,10 +3,6 @@
     <Layout/>
     <v-row rows="1" id="srrg">
       <v-col cols="3" align="left" mb="1">
-        <v-text-field
-        v-model="message"
-        append-icon='mdi-magnify'
-        @click:append="sendMessage"/>
       </v-col>
       <v-col align="right">
           <v-btn height="30px" style="margin-top:20px;" @click="$router.push('/sinup')" v-if="TF">등록</v-btn>
@@ -31,7 +27,8 @@ export default {
   },
   data: () => ({
     message: '',
-    TF: true
+    TF: true,
+    search: ''
   }),
   components: {
     Layout

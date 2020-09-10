@@ -85,7 +85,12 @@ const routes = [
   {
     path: '/show',
     name: 'Show',
-    component: Show
+    components: {
+      default: Show
+    },
+    props: {
+      default: true
+    }
   }
 ]
 

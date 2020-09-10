@@ -29,7 +29,7 @@ public class Member {
     private String title;
 
     @Column(name = "file", nullable = true)
-    private BitSet file;
+    private String file;
 
     @Column(name = "ex", columnDefinition ="TEXT", nullable = true)
     private String ex;
