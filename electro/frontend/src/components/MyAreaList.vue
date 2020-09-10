@@ -15,8 +15,7 @@
     </template>
     <template #content>
       <v-simple-table
-        id="tables"
-        :search="search">
+        id="tables">
         <template v-slot:default padding="1px">
           <thead padding="1px" margin="1px">
             <tr>
@@ -26,10 +25,10 @@
             </tr>
           </thead>
           <tbody>
-            <tr v-for="board in myboard" :key="board.memberno">
-              <td class="text-center" @click="$router.push('/show')">{{ board.memberNo }}</td>
-              <td class="text-center" @click="$router.push('/show')">{{ board.title }}</td>
-              <th class="text-center"><v-btn>삭제</v-btn></th>
+            <tr v-for="board in myboard" :key="board.memberNo">
+              <td class="text-center" @click="read(board.memberNo)">{{ board.memberNo }}</td>
+              <td class="text-center" @click="read(board.memberNo)">{{ board.title }}</td>
+              <th class="text-center" @click="dle(board.memberNo)"><v-btn>삭제</v-btn></th>
             </tr>
           </tbody>
         </template>
@@ -41,6 +40,8 @@
 <script>
 import MainPage from '@/components/MainPage.vue'
 import router from '../router'
+import axios from 'axios'
+
 export default {
   name: 'MyArealist',
   components: {
@@ -58,6 +59,21 @@ export default {
   methods: {
     home () {
       (window.location.pathname !== '/myarea/relode') ? router.push('/myarea/relode') : router.go(0)
+    },
+    dle (memberNo) {
+      console.log('memberNo : ' + memberNo)
+      this.$emit('del', memberNo)
+    },
+    read (memberNo) {
+      console.log('memberNo : ' + memberNo)
+      axios.post('http://localhost:1234/member/readmember', { memberNo })
+        .then(res => {
+          console.log('res.data : ' + res.data)
+          router.push({ name: 'Show', params: { title: res.data.title, file: res.data.file, ex: res.data.ex } })
+        })
+        .catch(err => {
+          alert(err.response.data)
+        })
     }
   }
 }

@@ -83,4 +83,9 @@ public class MemberReposirory {
         );
         return res.isEmpty() ? null : res.get(0);
     }
+
+    public void delecte (Member member) throws Exception {
+        String query = "delete from member where memberno = ?";
+        jdbcTemplate.update(query,member.getMemberNo());
+    }
 }

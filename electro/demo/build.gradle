@@ -93,5 +93,3 @@ model {
 		}
 	}
 }
-
-test.dependsOn 'helloSharedLibrary'

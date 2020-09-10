@@ -46,4 +46,11 @@ public class MemberController {
         Member member1 = service.read(member);
         return new ResponseEntity<Member>(member1, HttpStatus.OK);
     }
+
+    @PostMapping("/deletemember")
+    public ResponseEntity<Member> delet (@Validated @RequestBody Member member) throws Exception {
+        log.info("Member Delect" + member.getMemberNo());
+        service.delete(member);
+        return new ResponseEntity<Member>(member,HttpStatus.OK);
+    }
 }

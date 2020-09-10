@@ -10,6 +10,7 @@
   "dependencies": {
     "axios": "^0.20.0",
     "cookies": "^0.8.0",
+    "d3": "^6.1.1",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
     "vuetify": "^2.2.11",

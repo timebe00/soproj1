@@ -37,4 +37,9 @@ public class MemberServicelmpl implements MemberService {
     public Member read(Member member) throws Exception {
         return reposirory.read(member);
     }
+
+    @Override
+    public void delete(Member member) throws Exception {
+        reposirory.delecte(member);
+    }
 }
