@@ -17,7 +17,7 @@ public class RegisterController {
     @Autowired
     private RegisterService service;
 
-    @PostMapping("")
+    @PostMapping("/register")
     public ResponseEntity<Register> register(@Validated @RequestBody Register register) throws Exception {
         log.info("Controller Register");
         log.info("getUserName : " + register.getName() + "  getUserId : " + register.getId() + "  getUserPassword : " +

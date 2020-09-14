@@ -27,7 +27,7 @@ export default {
       axios.post('http://localhost:1234/member/sinup', { title, file, ex, id })
         .then(res => {
           alert('확인')
-          router.push('/')
+          router.push('/myarea')
         })
         .catch(err => {
           alert(err.response.data)

@@ -10,9 +10,6 @@
         single-line
         hide-details/>
       </v-col>
-      <v-col align="right">
-          <v-btn height="30px" style="margin-top:20px;" @click="$router.push('/sinup')" v-if="TF">등록</v-btn>
-      </v-col>
     </v-row>
     <v-simple-table id="tables">
       <template v-slot:default padding="1px">
@@ -26,7 +23,7 @@
         <tbody>
           <tr @click="read(board.memberNo)"
             v-for="board in mainboard" :key="board.memberNo">
-            <td class="text-center">{{ board.memberNo }}</td>
+            <td class="text-center" >{{ board.memberNo }}</td>
             <td class="text-center">{{ board.title }}</td>
             <td class="text-center">{{ board.id }}</td>
           </tr>
@@ -39,12 +36,16 @@
 import Layout from '@/components/Layout.vue'
 import router from '../router'
 import axios from 'axios'
-
+import { mapGetters } from 'vuex'
 export default {
+  computed: {
+    ...mapGetters(['getid'])
+  },
   data: () => ({
     message: '',
-    TF: true,
-    search: ''
+    TF: false,
+    search: '',
+    num: 0
   }),
   components: {
     Layout
@@ -72,6 +73,9 @@ export default {
         .catch(err => {
           alert(err.response.data)
         })
+    },
+    num () {
+      this.num = this.num + 1
     }
   }
 }
