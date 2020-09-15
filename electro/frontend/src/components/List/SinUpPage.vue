@@ -25,11 +25,12 @@
                     accepted-file-types="image/*"
                     :server="server"
                     v-bind:files="myFiles"
-                    v-on:init="handleFilePondInit"
+                    filename="nick"
+                    filenameWithoutExtension="filename"
                   />
                 </td>
                 <td alight="center">
-                  <v-btn @click="imgokbtn()">확인</v-btn>
+                  <v-btn @click="imgokbtn(nick)">확인</v-btn>
                 </td>
               </tr>
             </table>
@@ -85,7 +86,7 @@ import vueFilePond from 'vue-filepond'
 import 'filepond/dist/filepond.min.css'
 import FilePondPluginFileValidateType from 'filepond-plugin-file-validate-type'
 //  import router from '../../router'
-//  import axios from 'axios'
+import axios from 'axios'
 const FilePond = vueFilePond(FilePondPluginFileValidateType)
 
 export default {
@@ -96,33 +97,44 @@ export default {
   data () {
     return {
       k: 1,
+      filename: '',
       inputpoto: true,
       title: '',
       ex: '',
       file: 'asd',
       myFiles: [],
+      num: 1,
+      nick: '',
       server: {
-        url: 'http://localhost:1234/file/file',
+        url: 'http://localhost:1234/file',
         process: {
-          headers: {
-            Authorization: localStorage.getItem('token')
-          }
+          url: '/file',
+          onload: (response) => { this.nick = response }
+        },
+        revert: {
+          url: '/remove',
+          method: 'POST'
         }
       }
     }
   },
   methods: {
-    handleFilePondInit () {
-      console.log('FilePond has initialized')
-    },
     signup () {
       console.log('ex : ' + this.ex + ' fil : ' + this.file + ' title : ' + this.title)
       const { title, file, ex } = this
       this.$emit('listup', { title, file, ex })
     },
     submit () {},
-    imgokbtn () {
-      this.inputpoto = false
+    imgokbtn (nick) {
+      //  this.inputpoto = false
+      console.log('myFiles : ' + nick)
+      axios.post('http://localhost:1234/file/pythonwork', { nick })
+        .then(res => {
+          alert('회원가입 성공')
+        })
+        .catch(err => {
+          alert(err.response.data)
+        })
     }
   }
 }
